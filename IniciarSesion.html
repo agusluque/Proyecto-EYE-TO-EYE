@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EYE TO EYE</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/materialize.min.css">
+    <script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="JS/ActivarValidar.js"></script>
+    <script src="JS/materialize.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="lanav">
+        <div class="nav-wrapper">
+          <a href="Index.html" class="brand-logo center" class="logo"><b>EYE TO EYE</b></a>
+          <ul id="nav-mobile" class="left">
+            <li><a href="#!" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons left" style="margin-right: 8px;">dehaze</i>Menú</a></li>
+          </ul>
+          <ul id="nav-mobile" class="right">
+            <li><a style="margin-right: 13px;" href="Registrarse.html"><i class="material-icons left" style="margin-right: 5px;">perm_identity</i>Registrarse</a></li>
+          </ul>
+        </div>
+      </nav> 
+    </div>
+
+    <ul id="slide-out" class="sidenav" style="width: 22%;">
+      <div class="row">
+        <li><a href="#!" style="margin-left: 74%;" class="sidenav-close tooltipped" data-position="right" data-tooltip="Cerrar Menú"><i class="material-icons">close</i></a></li> 
+        <li class="men">Menú</li>
+      </div>
+          <ul class="collection">
+              <a href="Index.html" style="color:black;" class="btnmenu collection-item waves-effect">Nuestras Recomendaciones</a>
+              <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">Lo más popular</a>
+              <a href="Categorias.html" style="color:black;" class="btnmenu collection-item waves-effect">Categorías</a>
+              <a href="Formulario.html" style="color:black;" class="btnmenu collection-item waves-effect">Participar</a>
+              <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">Likeados</a>
+              <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">ONGs/Servicios</a>
+              <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">¿Quiénes Somos?</a>
+          </ul>
+        </ul>
+    <div class="cuadradonegro z-depth-5">
+    <form name="login" action="passport.js">
+    <div class="row col l12">
+      <div class="col l9">
+        <p class="IS" style="margin-left: 34%;">Iniciar sesion</p>
+      </div>
+      <div class="col l3">
+        <a href="Index.html"><i class="material-icons white-text tooltipped" data-position="top" data-tooltip="Cerrar" style="margin-left: 106%; margin-top: 7%;">close</i></a>
+      </div>
+    </div> 
+    <div class="row col l12">
+      <div class="col l5">
+        <div class="row">
+          <div class="input-field col l12">
+            <input id="email" type="email" autofocus class="white-text" onchange="validarLogin();"> 
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col l12">
+            <input id="password" type="password" class="white-text" onchange="validarLogin();"> 
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+      </div>
+      <div class="col l2">
+        <img src="IMAGENES/LineaB.png" height="220px" style="margin-left: 50%;">
+      </div>
+      <div class="col l5">
+        <br><br><a href='auth/google'><img src="IMAGENES/Google.png" alt="Ingresar con google" width="90%"></a><br><br>
+        <a href="auth/facebook"><img src="IMAGENES/Facebook.png" alt="Ingresar con Facebook" width="90%"></a>
+      </div>
+    </div> 
+    <input onclick="enviarform();" id="subis" value="Iniciar sesion" class="but z-depth-5" type="button" disabled>
+    </form>
+    
+    <br><span style="color: white; margin-left: 10%; font-family: 'Lato', sans-serif;">¿No tenes una cuenta? <a href="Registrarse.html" style="text-decoration: underline;">Registrate</a></span>
+    </div>
+
+  </body>
+</html>  

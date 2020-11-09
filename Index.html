@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EYE TO EYE</title>
+    <link rel="icon" type="image-png" href="IMAGENES/Logo.png">
+    <link rel="stylesheet" type="text/css" href="CSS/Index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/materialize.min.css">
+    <script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="JS/ActivarValidar.js"></script>
+    <script src="JS/materialize.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <meta name="HandheldFriendly" content="true">
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="lanav">
+        <div class="nav-wrapper">
+          <a href="Index.html" class="brand-logo center" class="logo"><b>EYE TO EYE</b></a>
+          <ul id="nav-mobile" class="left">
+            <li><a href="#!" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons left" style="margin-right: 8px;">dehaze</i>Menú</a></li>
+          </ul>
+          <ul id="nav-mobile" class="right">
+            <li><a href="IniciarSesion.html" style="margin-right: 13px;"><i class="material-icons left" style="margin-right: 5px;">perm_identity</i>Iniciar Sesión</a></li>
+          </ul>
+        </div>
+      </nav> 
+    </div>
+
+    <ul id="slide-out" class="sidenav" style="width: 22%;">
+      <div class="row">
+      <li><a href="#!" style="margin-left: 74%;" class="sidenav-close tooltipped" data-position="right" data-tooltip="Cerrar Menú"><i class="material-icons">close</i></a></li> 
+        <li class="men">Menú</li>
+      </div>
+        <ul class="collection">
+            <a href="Index.html" style="color:black;" class="btnmenu collection-item waves-effect">Nuestras Recomendaciones</a>
+            <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">Lo más popular</a>
+            <a href="Categorias.html" style="color:black;" class="btnmenu collection-item waves-effect">Categorías</a>
+            <a href="Formulario.html" style="color:black;" class="btnmenu collection-item waves-effect">Participar</a>
+            <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">Likeados</a>
+            <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">ONGs/Servicios</a>
+            <a href="#!" style="color:black;" class="btnmenu collection-item waves-effect">¿Quiénes Somos?</a>
+        </ul>
+      </ul>
+      
+      <div class="fullscreen slider ini">
+        <ul class="slides">
+          <li> 
+            <img src="IMAGENES/Covid.jpg"> 
+            <!--<div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div> -->
+          </li>
+          <li>
+            <img src="IMAGENES/prueba.jpg"> 
+            <!-- <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div> -->
+          </li>
+          <li>
+            <img src="IMAGENES/Covid.jpg"> 
+            <!-- <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div> -->
+          </li>
+          <li>
+            <img src="IMAGENES/prueba.jpg"> 
+            <!-- <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div> -->
+          </li>
+        </ul>
+      </div> 
+      <a class="btn-floating btn waves-effect waves-light black botbef tooltipped" data-position="top" data-tooltip="Imagen anterior" style="margin-left: 40%; margin-top: 38%;" onclick="btnanterior();"><i class="material-icons">arrow_back</i></a>
+      <a class="btn-floating btn waves-effect waves-light black botnext tooltipped" data-position="top" data-tooltip="Siguiente imagen" style="margin-top: 38%; margin-left: 13%;" onclick="btnsiguiente();"><i class="material-icons">arrow_forward</i></a>
+
+  </body>
+</html>
